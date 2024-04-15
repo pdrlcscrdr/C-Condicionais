@@ -1,21 +1,23 @@
 #include<stdio.h>
 #include<locale.h>
-//VerificaÁ„o de divis„o exata
+//Verifica√ß√£o de divis√£o exata
 int main(){
 	setlocale(LC_ALL, "Portuguese");
 	int n, d;
+	//Solicita√ß√£o dos operandos 
 	printf("Informe o numerador: \n");
 	scanf("%i", &n);
 	printf("Informe o denominador: \n");
 	scanf("%i", &d);
+	//Condi√ß√µes para determinar a exatid√£o da divis√£o
 	if(d == 0){
-		printf("Divis„o indefinida.");
+		printf("Divis√£o indefinida.");
 	}
 	else if(n % d == 0){
-		printf("A divis„o È exata.");
+		printf("A divis√£o √© exata.");
 	}
 	else{
-		printf("A divis„o n„o È exata.");
+		printf("A divis√£o n√£o √© exata.");
 	}
 	return(0);
 }
